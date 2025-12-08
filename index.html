@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <h1 class="header__title">Akdeniz.ru</h1>
+        <div class="header__city dropdown-list">
+          <span class="header__city-text dropdown-list__text">Анталия</span>
+          <svg width="16" height="16">
+            <path
+              d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <div class="header__city-dropdown dropdown-list__wrapper">
+            <div class="header__dropdown-list dropdown-list__list">
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Анталия">Анталия</a>
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Аланья">Аланья</a>
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Мерсин">Мерсин</a>
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Фетхие">Фетхие</a>
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Кемер">Кемер</a>
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Бодрум">Бодрум</a>
+              <a href="/" class="dropdown-list__dropdown-item" data-city="Газипаша">Газипаша</a>
+            </div>
+          </div>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link header__menu-link--active">Новостройки</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Вторичка</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="/" class="header__menu-link">Коммерческая</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="/" class="header__favorite">
+          <svg width="24" height="24">
+            <path
+              d="M2 9.064c0 4.143 3.547 8.055 9.061 11.548.307.194.682.388.939.388.257 0 .632-.194.939-.388C18.462 17.119 22 13.207 22 9.064 22 5.484 19.48 3 16.249 3c-1.887 0-3.36.844-4.249 2.125C11.13 3.854 9.648 3 7.76 3 4.52 3 2 5.484 2 9.064zm2.036-.01c0-2.445 1.64-4.104 3.843-4.104 1.78 0 2.777 1.058 3.4 1.98.276.397.464.523.721.523.267 0 .435-.136.721-.524.672-.902 1.63-1.979 3.4-1.979 2.213 0 3.853 1.66 3.853 4.104 0 3.415-3.616 7.017-7.786 9.734-.09.058-.149.097-.188.097-.04 0-.099-.039-.178-.097-4.17-2.717-7.786-6.319-7.786-9.734z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+        <a href="tel:+71234567890" class="header__phone">+7 (123) 456-78-90</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="filter">
+        <div class="filter__wrapper container">
+          <form action="#" class="filter__form">
+            <div class="filter__main">
+              <div class="filter__dropdown filter__section dropdown-list">
+                <input type="hidden" name="category" class="dropdown-list__input" value="Новостройки" />
+
+                <span class="filter__dropdown-text dropdown-list__text">Новостройки</span>
+                <svg width="16" height="16">
+                  <path
+                    d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                <div class="dropdown-list__wrapper">
+                  <div class="filter__dropdown-list dropdown-list__list">
+                    <a href="/" class="dropdown-list__dropdown-item" data-type="Новостройки">Новостройки</a>
+                    <a href="/" class="dropdown-list__dropdown-item" data-type="Купить">Купить</a>
+                    <a href="/" class="dropdown-list__dropdown-item" data-type="Снять">Снять</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filter__rooms filter__section">
+                <div class="filter__rooms-list">
+                  <label class="filter__room">
+                    <input type="checkbox" name="rooms[]" value="Студия" hidden />
+                    <span>Студия</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input type="checkbox" name="rooms[]" value="1" hidden />
+                    <span>1</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input type="checkbox" name="rooms[]" value="2" hidden />
+                    <span>2</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input type="checkbox" name="rooms[]" value="3" hidden />
+                    <span>3</span>
+                  </label>
+
+                  <label class="filter__room">
+                    <input type="checkbox" name="rooms[]" value="4+" hidden />
+                    <span>4+</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="filter__price filter__section">
+                <div class="filter__price-field">
+                  <span class="filter__price-label">Цена до, ₽</span>
+                  <input type="text" name="price" class="filter__price-input" />
+                </div>
+              </div>
+              <div class="filter__districts filter__section dropdown-list districts-dropdown">
+                <input type="hidden" name="districts" class="districts-input" />
+
+                <span class="filter__dropdown-text dropdown-list__text">Районы</span>
+
+                <div class="dropdown-list__wrapper">
+                  <div class="districts-list">
+                    <label class="district-item">
+                      <input type="checkbox" value="Район 1" />
+                      <span>Район 1</span>
+                    </label>
+
+                    <label class="district-item">
+                      <input type="checkbox" value="Район 2" />
+                      <span>Район 2</span>
+                    </label>
+
+                    <label class="district-item">
+                      <input type="checkbox" value="Район 3" />
+                      <span>Район 3</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="/" class="filter__map">
+              <span>На карте</span>
+              <svg width="24" height="24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2 19V3.5L3 3l6 1.5 5.48-1.37a2 2 0 011.036.018l6.405 1.839L22 20.5l-1 .5-6-1.5-5.48 1.37a2 2 0 01-1.035-.017L2 19zm14-1.312l3.99.998-.061-12.19L16 5.368v12.32zm-2 0V5.312l-4 1v12.376l4-1zM4 5.312l4 1v12.322l-4-1.143V5.311z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </a>
+            <button type="submit" class="filter__button">Показать 141 новостройку</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>
