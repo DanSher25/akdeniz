@@ -878,3 +878,114 @@ h1 {
 .district-item input {
   display: none;
 }
+
+.list-header__wrapper {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 100px;
+}
+.list-header__title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  margin: 16px 0 0;
+}
+.list-header__tags {
+  margin-top: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  row-gap: 16px;
+}
+.list-header__tag-link {
+  cursor: pointer;
+  white-space: nowrap;
+  font-weight: 500;
+  padding: 9px 16px;
+  background-color: #f3f1f1;
+  border-radius: 64px;
+  font-size: 14px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+}
+.list-header__tag-number {
+  color: rgba(0, 0, 0, 0.32);
+}
+.list-header__right {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.list-header__map {
+  width: 300px;
+  height: 90px;
+  border-radius: 12px;
+  background-image: url("../images/map-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.list-header__map::before {
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: inherit;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.list-header__map:hover.list-header__map::before {
+  background-color: rgba(0, 0, 0, 0.16);
+}
+.list-header__map-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 20px;
+  padding: 8px 17px;
+  border-radius: 12px;
+  gap: 5px;
+  position: relative;
+  z-index: 2;
+}
