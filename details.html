@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Апартаменты</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__wrapper container">
+        <div class="header__top">
+          <h1 class="header__title">Akdeniz.ru</h1>
+          <div class="header__city dropdown-list">
+            <span class="header__city-text dropdown-list__text">Анталия</span>
+            <svg width="16" height="16">
+              <path
+                d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <div class="header__city-dropdown dropdown-list__wrapper">
+              <div class="header__dropdown-list dropdown-list__list">
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Анталия">Анталия</a>
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Аланья">Аланья</a>
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Мерсин">Мерсин</a>
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Фетхие">Фетхие</a>
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Кемер">Кемер</a>
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Бодрум">Бодрум</a>
+                <a href="/" class="dropdown-list__dropdown-item" data-city="Газипаша">Газипаша</a>
+              </div>
+            </div>
+          </div>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Инвестиции</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">ВНЖ и Гражданство</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Рассрочка</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">О компании</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="/" class="header__favorite">
+            <svg width="24" height="24">
+              <path
+                d="M2 9.064c0 4.143 3.547 8.055 9.061 11.548.307.194.682.388.939.388.257 0 .632-.194.939-.388C18.462 17.119 22 13.207 22 9.064 22 5.484 19.48 3 16.249 3c-1.887 0-3.36.844-4.249 2.125C11.13 3.854 9.648 3 7.76 3 4.52 3 2 5.484 2 9.064zm2.036-.01c0-2.445 1.64-4.104 3.843-4.104 1.78 0 2.777 1.058 3.4 1.98.276.397.464.523.721.523.267 0 .435-.136.721-.524.672-.902 1.63-1.979 3.4-1.979 2.213 0 3.853 1.66 3.853 4.104 0 3.415-3.616 7.017-7.786 9.734-.09.058-.149.097-.188.097-.04 0-.099-.039-.178-.097-4.17-2.717-7.786-6.319-7.786-9.734z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </a>
+          <a href="tel:+88004447601" class="header__phone">8 (800) 444-76-01</a>
+        </div>
+        <div class="header__bottom">
+          <div class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link header__menu-link--active">Новостройки </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Вторичка </a>
+              </li>
+              <li class="header__menu-item">
+                <a href="/" class="header__menu-link">Коммерческая</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="apartments">
+        <div class="apartments__wrapper container">
+          <h1 class="apartments__title">Объект 1241</h1>
+          <span class="apartments__address">Турция</span>
+          <div class="apartments__body">
+            <div class="apartments__gallery swiper apartments-gallery">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a data-fancybox="gallery" href="images/details1.webp">
+                    <img src="images/details1.webp" alt="" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a data-fancybox="gallery" href="images/details2.webp">
+                    <img src="images/details2.webp" alt="" />
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a data-fancybox="gallery" href="images/details3.webp">
+                    <img src="images/details3.webp" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a data-fancybox="gallery" href="images/details4.webp">
+                    <img src="images/details4.webp" alt="" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a data-fancybox="gallery" href="images/details5.webp">
+                    <img src="images/details5.webp" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="swiper-button-prev">
+                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.70715 1.70711C9.09766 1.31658 9.09766 0.68342 8.70715 0.292894C8.31653 -0.0976315 7.68347 -0.0976315 7.29285 0.292894L0.292847 7.29291C0.105347 7.48045 0 7.7348 0 8.00002C0 8.26523 0.105347 8.51959 0.292847 8.70712L7.29285 15.7071C7.68335 16.0976 8.31653 16.0976 8.70703 15.7071C9.09766 15.3166 9.09766 14.6834 8.70703 14.2929L3.41418 9H15.9999C16.5521 9 16.9999 8.55229 16.9999 8C16.9999 7.44772 16.5521 7 15.9999 7H3.41418L8.70715 1.70711Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.70715 1.70711C9.09766 1.31658 9.09766 0.68342 8.70715 0.292894C8.31653 -0.0976315 7.68347 -0.0976315 7.29285 0.292894L0.292847 7.29291C0.105347 7.48045 0 7.7348 0 8.00002C0 8.26523 0.105347 8.51959 0.292847 8.70712L7.29285 15.7071C7.68335 16.0976 8.31653 16.0976 8.70703 15.7071C9.09766 15.3166 9.09766 14.6834 8.70703 14.2929L3.41418 9H15.9999C16.5521 9 16.9999 8.55229 16.9999 8C16.9999 7.44772 16.5521 7 15.9999 7H3.41418L8.70715 1.70711Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+
+              <div class="swiper-pagination thumbs-pagination"></div>
+            </div>
+            <div class="apartments__info">
+              <span class="apartments__info-title">Об объекте </span>
+              <div class="apartments__info-table">
+                <div class="apartments__info-row">
+                  <div class="apartments__info-item">класс жилья</div>
+                  <div class="apartments__info-item">бизнес</div>
+                </div>
+                <div class="apartments__info-row">
+                  <div class="apartments__info-item">квартиры</div>
+                  <div class="apartments__info-item">от 880 € / кв.м</div>
+                </div>
+                <div class="apartments__info-row">
+                  <div class="apartments__info-item">цена</div>
+                  <div class="apartments__info-item">от 62 000 €</div>
+                </div>
+                <div class="apartments__info-row">
+                  <div class="apartments__info-item">срок сдачи</div>
+                  <div class="apartments__info-item">06.2025</div>
+                </div>
+              </div>
+
+              <div class="apartments__buttons">
+                <a href="/" class="apartments__button apartments__button--call">Позвонить</a>
+                <a href="/" class="apartments__button apartments__button--favorite">В избранное</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="prices-table">
+        <div class="prices-table__wrapper container">
+          <div class="prices-table__body">
+            <div class="prices-table__row">
+              <div class="prices-table__item">1+1</div>
+              <div class="prices-table__item">53 кв.м</div>
+              <div class="prices-table__item">62 000 €</div>
+              <a href="/" class="prices-table__button">Забронировать</a>
+            </div>
+            <div class="prices-table__row">
+              <div class="prices-table__item">1+1</div>
+              <div class="prices-table__item">58 кв.м</div>
+              <div class="prices-table__item">69 000 €</div>
+              <a href="/" class="prices-table__button">Забронировать</a>
+            </div>
+            <div class="prices-table__row">
+              <div class="prices-table__item">2+1</div>
+              <div class="prices-table__item">92 кв.м</div>
+              <div class="prices-table__item">81 000 €</div>
+              <a href="/" class="prices-table__button">Забронировать</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="apartments-info">
+        <div class="apartments-info__wrapper container">
+          <h2 class="apartments-info__title">О жилом комплексе</h2>
+          <div class="apartments-info__description">
+            Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь, дизайнерские
+            встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего класса и душевыми
+            кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю . Круглосуточная охрана,
+            Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов — 550 м, до школы — 3 км, до
+            медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
+          </div>
+        </div>
+      </section>
+      <section class="similar">
+        <div class="similar__wrapper container">
+          <span class="similar__title">Вам может быть интересно </span>
+          <div class="similar__catalog catalog">
+            <ul class="catalog__body">
+              <li class="catalog__card card">
+                <div class="card__wrapper">
+                  <div class="card__img-wrapper">
+                    <img src="images/house1.webp" class="card__img" />
+                    <ul class="card__tags">
+                      <li class="card__tag">Новостройка</li>
+                    </ul>
+                  </div>
+                  <h3 class="card__title">Объект 1241</h3>
+                  <div class="card__prices-table">
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">1+1</span>
+                      <span class="card__prices-content">53 кв.м </span>
+                      <span class="card__prices-content">62 000 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">1+1 </span>
+                      <span class="card__prices-content">58 кв.м</span>
+                      <span class="card__prices-content">69 000 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">2+1 </span>
+                      <span class="card__prices-content">92 кв.м </span>
+                      <span class="card__prices-content">81 000 € </span>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    Площадь комплекса 3911 м2 2 блока 168 квартиры 1+1, 2+1 планировки. Квартиры сдаются с чистовой отделкой , Стальная входная дверь,
+                    дизайнерские встроенные шкафы, ПВХ-дверями с двойным стеклопакетом, Подвесными потолками, Кухонными и бато-долапами, сантехникой высшего
+                    класса и душевыми кабинками . В инфраструктуру входят Открытый бассейн, Игровые и спортивные зоны, Беседки для отдыха и Барбекю .
+                    Круглосуточная охрана, Видеонаблюдение и современные лифты . Комплекс удобно расположен: от него до пляжа — 550 м, до ближайших магазинов —
+                    550 м, до школы — 3 км, до медицинского центра — 6 км, до центра Мерсина — 27 км, до марины — 21,2 км. Срок сдачи: 06.2025
+                  </div>
+                  <div class="card__buttons">
+                    <a href="/" class="card__button card__button--details">Подробнее</a>
+                    <a href="/" class="card__button card__button--favorite">В избранное</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__card card">
+                <div class="card__wrapper">
+                  <div class="card__img-wrapper">
+                    <img src="images/house2.webp" class="card__img" />
+                    <ul class="card__tags">
+                      <li class="card__tag">Новостройка</li>
+                    </ul>
+                  </div>
+                  <h3 class="card__title">Объект 1239</h3>
+                  <div class="card__prices-table">
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 1+1</span>
+                      <span class="card__prices-content">65 кв.м </span>
+                      <span class="card__prices-content">57 000 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 2+1 </span>
+                      <span class="card__prices-content">120 кв.м </span>
+                      <span class="card__prices-content">105 000 € </span>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    Площадь комплекса 7000 м2 350 квартиры 1+1, 2+1 планировки. Все квартиры сдаются с полной отделкой «turnkey» — готовой меблировкой,
+                    кухонными гарнитурами и санфаянсом. В инфраструктуру входят открытый бассейн с аквапарком, фитнес‑центр, турецкая баня, сауна, детская
+                    площадка, баскетбольная площадка, зоны отдыха с беседками и барбекю, круглосуточная охрана и система видеонаблюдения. Срок сдачи: 04.2025
+                  </div>
+                  <div class="card__buttons">
+                    <a href="/" class="card__button card__button--details">Подробнее</a>
+                    <a href="/" class="card__button card__button--favorite">В избранное</a>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog__card card">
+                <div class="card__wrapper">
+                  <div class="card__img-wrapper">
+                    <img src="images/house3.webp" class="card__img" />
+                    <ul class="card__tags">
+                      <li class="card__tag">Новостройка</li>
+                    </ul>
+                  </div>
+                  <h3 class="card__title">Объект 1237</h3>
+                  <div class="card__prices-table">
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 1+1</span>
+                      <span class="card__prices-content">72.84 кв.м </span>
+                      <span class="card__prices-content">499 153 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content">1+1 </span>
+                      <span class="card__prices-content">90.98 кв.м </span>
+                      <span class="card__prices-content">725 934 € </span>
+                    </div>
+                    <div class="card__prices-row">
+                      <span class="card__prices-content"> 2+1 </span>
+                      <span class="card__prices-content">129.19 кв.м </span>
+                      <span class="card__prices-content">931 689 € </span>
+                    </div>
+                  </div>
+                  <div class="card__info">
+                    Площадь комплекса 5738 м2 2 блока 124 квартир 1+1, 2+1 и 3+1 планировки. Потолки высотой 3,10 м (в блоке A) и 2,80 м (в блоке B). Все
+                    квартиры будут сдаваться с Чистовой отделкой, Встроенной кухонной техникой: варочная панель, вытяжка, Духовой шкаф и посудомоечная машина,
+                    Центральное отоплением, Интеграцией систем "умный дом" и Энергоэффективное остекление, Инфраструктура включает Закрытый и Открытый бассейн,
+                    Частную парковку, Фитнес и Социальные зоны, Лобби-услуги и 7/24 Охрану с видеонаблюдением. Расположен всего в 750 м от станции метро Fulya и
+                    в 2 км от набережной. В шаговой доступности также находятся ведущие университеты, а также престижные школы, Медицинская инфраструктура.
+                    Рядом расположены знаковые достопримечательности. До аэропортов: 30 км. Срок сдачи: 09.2025
+                  </div>
+                  <div class="card__buttons">
+                    <a href="/" class="card__button card__button--details">Подробнее</a>
+                    <a href="/" class="card__button card__button--favorite">В избранное</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="js/main.min.js"></script>
+</html>
