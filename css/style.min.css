@@ -733,6 +733,9 @@ h1 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .filter__section {
   position: relative;
@@ -764,7 +767,7 @@ h1 {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   height: 100%;
-  width: 158px;
+  width: 20%;
   border-radius: 12px 0 0 12px;
 }
 .filter__dropdown:hover {
@@ -807,10 +810,13 @@ h1 {
 .filter__room:hover {
   background: #f3f3f6;
 }
+.filter__price {
+  width: 22%;
+}
 .filter__price-field {
   position: relative;
   display: inline-block;
-  width: 200px;
+  width: 100%;
 }
 .filter__price-input {
   width: 100%;
@@ -848,9 +854,27 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 .filter__districts:hover {
   background-color: #fafafa;
+}
+.filter__dropdown-text {
+  text-align: center;
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 5px;
 }
 .filter .districts-list {
   display: -webkit-box;
@@ -1018,8 +1042,20 @@ h1 {
 }
 .catalog__card {
   width: calc(33.33333% - 21.33333px);
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
 }
 
+.card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
 .card__img-wrapper {
   position: relative;
   border-radius: 12px;
@@ -1076,7 +1112,7 @@ h1 {
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;
-  height: 95px;
+  margin-bottom: 12px;
 }
 .card__prices-row {
   display: -webkit-box;
@@ -1107,6 +1143,7 @@ h1 {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+  margin-top: auto;
 }
 .card__buttons {
   display: -webkit-box;
