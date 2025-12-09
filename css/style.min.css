@@ -1420,9 +1420,23 @@ a.breadcrumbs__item:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+}
+.prices-table__row:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  background-color: #ebebeb;
+  left: 12px;
+  right: 12px;
 }
 .prices-table__row:hover {
   background-color: #f3f1f1;
+}
+.prices-table__row:hover::after {
+  content: "";
+  background-color: transparent;
 }
 .prices-table__item {
   -ms-flex-preferred-size: 25%;
@@ -1444,6 +1458,7 @@ a.breadcrumbs__item:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: auto;
 }
 .prices-table__button:hover {
   background-color: #272727;
