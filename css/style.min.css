@@ -621,6 +621,20 @@ h1 {
 .header__favorite:hover {
   background: #f3f3f6;
 }
+.header__favorite svg {
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+.header__favorite.active svg {
+  color: #e53935;
+  fill: red;
+  stroke: red;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
 .header__phone {
   border-radius: 8px;
   font-size: 14px;
@@ -1377,6 +1391,20 @@ a.breadcrumbs__item:hover {
 .apartments-aside__favorite:hover, .apartments-aside__more:hover {
   background: #f3f3f6;
 }
+.apartments-aside__favorite svg {
+  -webkit-transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: color 0.2s ease, -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+}
+.apartments-aside__favorite.active svg {
+  color: #e53935;
+  fill: red;
+  stroke: red;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
 .apartments-aside__info-title {
   font-size: 16px;
   font-weight: 500;
@@ -1538,7 +1566,7 @@ a.breadcrumbs__item:hover {
 }
 
 .similar__wrapper {
-  margin-top: 24px;
+  margin-top: 42px;
 }
 .similar__title {
   font-size: 24px;
@@ -1553,15 +1581,16 @@ a.breadcrumbs__item:hover {
 }
 .map iframe {
   width: 100%;
+  border-radius: 12px;
 }
 
 .parameters__wrapper {
-  margin-top: 24px;
+  margin-top: 42px;
 }
 .parameters__title {
   font-size: 24px;
   line-height: 30px;
-  display: block;
+  font-weight: 500;
 }
 .parameters__subtitle {
   color: rgba(0, 0, 0, 0.32);
