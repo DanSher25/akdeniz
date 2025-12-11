@@ -462,46 +462,28 @@ template {
    Yandex Sans Text
    ======================= */
 @font-face {
-  font-family: "YandexSansText";
-  src: url("../fonts/YandexSansText-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
   font-display: swap;
-}
-@font-face {
   font-family: "YandexSansText";
-  src: url("../fonts/YandexSansText-Light.woff2") format("woff2");
-  font-weight: 300;
+  font-stretch: normal;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "YandexSansText";
-  src: url("../fonts/YandexSansText-Regular.woff2") format("woff2");
   font-weight: 400;
+  src: url("//yastatic.net/s3/home/fonts/ys/1/text-regular.woff2") format("woff2"), url("//yastatic.net/s3/home/fonts/ys/1/text-regular.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "YandexSansText";
+  font-stretch: normal;
   font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "YandexSansText";
-  src: url("../fonts/YandexSansText-RegularItalic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "YandexSansText";
-  src: url("../fonts/YandexSansText-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url("//yastatic.net/s3/home/fonts/ys/1/text-medium.woff2") format("woff2"), url("//yastatic.net/s3/home/fonts/ys/1/text-medium.woff") format("woff");
 }
 @font-face {
-  font-family: "YandexSansText";
-  src: url("../fonts/YandexSansText-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
   font-display: swap;
+  font-family: "YandexSansText";
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 700;
+  src: url("//yastatic.net/s3/home/fonts/ys/1/text-bold.woff2") format("woff2"), url("//yastatic.net/s3/home/fonts/ys/1/text-bold.woff") format("woff");
 }
 *,
 ::before,
@@ -548,7 +530,7 @@ h1 {
   gap: 11px;
 }
 .header__logo {
-  font-weight: 600;
+  font-weight: 700;
   color: #000;
   font-size: 20px;
 }
@@ -644,7 +626,7 @@ h1 {
   color: rgba(255, 255, 255, 0.92);
   -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
   transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
-  font-weight: 500;
+  font-weight: 700;
 }
 .header__phone:hover {
   background-color: #272727;
@@ -797,7 +779,7 @@ h1 {
   color: rgba(0, 0, 0, 0.92);
   border-radius: 12px;
   background-color: #fed42b;
-  font-weight: 500;
+  font-weight: 700;
   width: 300px;
   text-align: center;
   border: none;
@@ -1003,7 +985,7 @@ h1 {
 }
 .catalog-header__title {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 34px;
   margin: 16px 0 0;
 }
@@ -1080,7 +1062,7 @@ h1 {
   cursor: pointer;
   display: flex;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   height: 48px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1097,7 +1079,7 @@ h1 {
   margin-top: 36px;
 }
 .catalog__filter-rersult {
-  font-weight: 500;
+  font-weight: 700;
   padding-right: 12px;
   margin-bottom: 12px;
   display: block;
@@ -1213,7 +1195,7 @@ h1 {
 .card__tag {
   font-size: 12px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 0.2px;
   line-height: 16px;
   -webkit-box-orient: horizontal;
@@ -1306,7 +1288,7 @@ h1 {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 .card__button--details {
   background-color: #fed42b;
@@ -1370,7 +1352,7 @@ a.breadcrumbs__item:hover {
   margin: 0;
   margin-top: 12px;
   padding: 0;
-  font-weight: 500;
+  font-weight: 700;
 }
 .apartments__address {
   font-size: 16px;
@@ -1461,7 +1443,7 @@ a.breadcrumbs__item:hover {
   flex-grow: 1;
 }
 .apartments-aside__price {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
 }
 .apartments-aside__sub-price {
@@ -1513,7 +1495,7 @@ a.breadcrumbs__item:hover {
 }
 .apartments-aside__info-title {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 24px;
 }
 .apartments-aside__info-table {
@@ -1566,7 +1548,7 @@ a.breadcrumbs__item:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 700;
 }
 .apartments-aside__button--call {
   background-color: #fed42b;
@@ -1716,7 +1698,7 @@ a.breadcrumbs__item:hover {
 }
 .prices-table__content-title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 26px;
   margin-bottom: 16px;
   position: relative;
@@ -1753,7 +1735,7 @@ a.breadcrumbs__item:hover {
 .prices-table__content-price {
   margin-top: 24px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 26px;
 }
 .prices-table__content-small-price {
@@ -1764,7 +1746,7 @@ a.breadcrumbs__item:hover {
 .prices-table__item {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
-  font-weight: 500;
+  font-weight: 700;
 }
 .prices-table__button {
   border-radius: 8px;
@@ -1775,7 +1757,7 @@ a.breadcrumbs__item:hover {
   color: rgba(255, 255, 255, 0.92);
   -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
   transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
-  font-weight: 500;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1798,7 +1780,7 @@ a.breadcrumbs__item:hover {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 24px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .apartments-info__description {
   font-size: 16px;
@@ -1810,7 +1792,7 @@ a.breadcrumbs__item:hover {
 }
 .similar__title {
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 30px;
   margin-bottom: 24px;
   display: block;
@@ -1830,7 +1812,7 @@ a.breadcrumbs__item:hover {
 .parameters__title {
   font-size: 24px;
   line-height: 30px;
-  font-weight: 500;
+  font-weight: 700;
 }
 .parameters__subtitle {
   color: rgba(0, 0, 0, 0.32);
@@ -2064,7 +2046,7 @@ a.breadcrumbs__item:hover {
   justify-content: space-between;
 }
 .footer__logo {
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   font-size: 20px;
 }
@@ -2074,7 +2056,7 @@ a.breadcrumbs__item:hover {
   margin: 12px auto 0 auto;
   padding: 24px 32px;
   border-radius: 20px;
-  max-width: 500px;
+  max-width: 700px;
 }
 .installment-plan__top {
   display: -webkit-box;
@@ -2101,7 +2083,7 @@ a.breadcrumbs__item:hover {
 }
 .installment-plan__top-item-value {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 26px;
 }
 .installment-plan__button {
@@ -2118,7 +2100,7 @@ a.breadcrumbs__item:hover {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  font-weight: 500;
+  font-weight: 700;
   margin-top: 16px;
   color: #fff;
   background-color: #2e2e2e;
