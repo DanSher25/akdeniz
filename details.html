@@ -55,6 +55,42 @@
               ></path>
             </svg>
           </a>
+          <div class="header__language dropdown-list">
+            <span class="header__language-text dropdown-list__text">RU</span>
+            <img src="images/flag-ru.svg" alt="" class="header__language-img" />
+            <div class="header__language-dropdown dropdown-list__wrapper">
+              <div class="header__dropdown-list dropdown-list__list">
+                <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                  <span>US</span>
+                  <img src="images/flag-usa.svg" alt="" class="header__language-img" />
+                </a>
+                <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                  <span>FR</span>
+                  <img src="images/flag-fr.svg" alt="" class="header__language-img" />
+                </a>
+                <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                  <span>DE</span>
+                  <img src="images/flag-de.svg" alt="" class="header__language-img" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__currency dropdown-list">
+            <span class="header__currency-text dropdown-list__text">Валюта</span>
+            <svg width="16" height="16">
+              <path
+                d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                fill="currentColor"
+              ></path>
+            </svg>
+            <div class="header__currency-dropdown dropdown-list__wrapper">
+              <div class="header__dropdown-list dropdown-list__list">
+                <a href="/" class="dropdown-list__dropdown-item">₽</a>
+                <a href="/" class="dropdown-list__dropdown-item">$</a>
+                <a href="/" class="dropdown-list__dropdown-item">€</a>
+              </div>
+            </div>
+          </div>
           <a href="tel:+88004447601" class="header__phone">8 (800) 444-76-01</a>
           <div class="header__burger">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width-="24" height="24">
@@ -115,6 +151,44 @@
             </ul>
           </nav>
           <a href="tel:+88004447601" class="header__phone">8 (800) 444-76-01</a>
+          <div class="header__mobile-dropdowns-wrapper">
+            <div class="header__language dropdown-list">
+              <span class="header__language-text dropdown-list__text">RU</span>
+              <img src="images/flag-ru.svg" alt="" class="header__language-img" />
+              <div class="header__language-dropdown dropdown-list__wrapper">
+                <div class="header__dropdown-list dropdown-list__list">
+                  <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                    <span>US</span>
+                    <img src="images/flag-usa.svg" alt="" class="header__language-img" />
+                  </a>
+                  <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                    <span>FR</span>
+                    <img src="images/flag-fr.svg" alt="" class="header__language-img" />
+                  </a>
+                  <a href="/" class="dropdown-list__dropdown-item header__language-item">
+                    <span>DE</span>
+                    <img src="images/flag-de.svg" alt="" class="header__language-img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__currency dropdown-list">
+              <span class="header__currency-text dropdown-list__text">Валюта</span>
+              <svg width="16" height="16">
+                <path
+                  d="M2.293 5.293a1 1 0 011.414 0L8 9.586l4.293-4.293a1 1 0 111.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              <div class="header__currency-dropdown dropdown-list__wrapper">
+                <div class="header__dropdown-list dropdown-list__list">
+                  <a href="/" class="dropdown-list__dropdown-item">₽</a>
+                  <a href="/" class="dropdown-list__dropdown-item">$</a>
+                  <a href="/" class="dropdown-list__dropdown-item">€</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="header__overlay"></div>
       </div>
@@ -431,7 +505,8 @@
                   </a>
                 </div>
               </div>
-
+              <div class="apartments-aside__price">от 62 000 €</div>
+              <div class="apartments-aside__sub-price">от 53 кв.м</div>
               <div class="apartments-aside__info-table">
                 <div class="apartments-aside__info-row">
                   <div class="apartments-aside__info-item">класс жилья</div>
@@ -442,10 +517,6 @@
                   <div class="apartments-aside__info-item">от 880 € / кв.м</div>
                 </div>
                 <div class="apartments-aside__info-row">
-                  <div class="apartments-aside__info-item">цена</div>
-                  <div class="apartments-aside__info-item">от 62 000 €</div>
-                </div>
-                <div class="apartments-aside__info-row">
                   <div class="apartments-aside__info-item">срок сдачи</div>
                   <div class="apartments-aside__info-item">06.2025</div>
                 </div>
@@ -453,7 +524,21 @@
 
               <div class="apartments-aside__buttons">
                 <a href="/" class="apartments-aside__button apartments-aside__button--call">Позвонить</a>
-                <a href="/" class="apartments-aside__button apartments-aside__button--favorite">В избранное</a>
+              </div>
+              <div class="apartments-aside__installment-plan installment-plan">
+                <div class="installment-plan__wrapper">
+                  <div class="installment-plan__top">
+                    <div class="installment-plan__top-item">
+                      <div class="installment-plan__top-item-value">от 5.75%</div>
+                      <div class="installment-plan__top-item-title">Ставка</div>
+                    </div>
+                    <div class="installment-plan__top-item">
+                      <div class="installment-plan__top-item-value">от 479 000 ₽</div>
+                      <div class="installment-plan__top-item-title">Платеж в месяц</div>
+                    </div>
+                  </div>
+                  <a href="/" class="installment-plan__button">Отправить заявку</a>
+                </div>
               </div>
             </div>
           </div>
