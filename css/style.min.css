@@ -578,32 +578,6 @@ h1 {
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.header__currency {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
-  padding: 6px 10px;
-  border-radius: 8px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-.header__currency:hover {
-  background: #fafafa;
-}
-.header__currency svg {
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-.header__currency.active svg {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
 .header__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -710,9 +684,6 @@ h1 {
 }
 .header__language-dropdown {
   width: 75px !important;
-}
-.header__currency-dropdown {
-  width: 42px !important;
 }
 .header__language-item {
   display: -webkit-box;
@@ -1614,6 +1585,48 @@ a.breadcrumbs__item:hover {
 .apartments-aside__share.active {
   display: block;
 }
+.apartments-aside__currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  border-radius: 8px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 14px;
+}
+.apartments-aside__currency:hover {
+  background: #fafafa;
+}
+.apartments-aside__currency svg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.apartments-aside__currency.active svg {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.apartments-aside__price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.apartments-aside__currency {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.apartments-aside__currency-dropdown {
+  width: 42px !important;
+}
+.apartments-aside__currency-text {
+  color: #0065d9;
+}
 
 .prices-table__wrapper {
   margin-top: 24px;
@@ -2146,9 +2159,6 @@ a.breadcrumbs__item:hover {
     display: none;
   }
   .header__top .header__language {
-    display: none;
-  }
-  .header__top .header__currency {
     display: none;
   }
   .header__mobile-menu {
