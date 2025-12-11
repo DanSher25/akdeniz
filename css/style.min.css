@@ -503,6 +503,11 @@ html {
   font-family: "YandexSansText", "Helvetica Neue", "Arial", sans-serif;
 }
 
+body {
+  -webkit-font-feature-settings: "liga", "kern", "pnum" on, "lnum" on;
+  font-feature-settings: "liga", "kern", "pnum" on, "lnum" on;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -1444,7 +1449,7 @@ a.breadcrumbs__item:hover {
 }
 .apartments-aside__price {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
 }
 .apartments-aside__sub-price {
   margin-top: 8px;
