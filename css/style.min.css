@@ -1200,7 +1200,7 @@ h1 {
 .card__tag {
   font-size: 12px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 0.2px;
   line-height: 16px;
   -webkit-box-orient: horizontal;
@@ -1627,58 +1627,51 @@ a.breadcrumbs__item:hover {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-.prices-table__arrow {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
 .prices-table__block {
   position: relative;
 }
-.prices-table__block.open::after {
+.prices-table__block.is-open::after {
   content: none !important;
 }
-.prices-table__block.open .prices-table__arrow {
+.prices-table__block.is-open .prices-table__arrow {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
-.prices-table__block.open .prices-table__row {
+.prices-table__block.is-open .prices-table__row {
   background-color: #ebebeb;
 }
 .prices-table__block:not(:last-of-type)::after {
   content: "";
   position: absolute;
   bottom: 0;
-  height: 1px;
-  background-color: #ebebeb;
   left: 12px;
   right: 12px;
+  height: 1px;
+  background-color: #ebebeb;
 }
 .prices-table__block:hover::after {
-  content: "";
   background-color: transparent;
 }
 .prices-table__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 72px;
-  border-radius: 12px;
-  padding: 12px 16px;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  position: relative;
+  height: 72px;
+  padding: 12px 16px;
+  border-radius: 12px;
   cursor: pointer;
 }
 .prices-table__row:hover {
   background-color: #f3f1f1;
 }
-.prices-table__content {
-  overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  max-height: 0;
+.prices-table__item {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1686,6 +1679,33 @@ a.breadcrumbs__item:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  gap: 10px;
+}
+.prices-table__item-bottom {
+  color: rgba(0, 0, 0, 0.56);
+  font-weight: 400;
+}
+.prices-table__button {
+  margin-left: auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  background-color: #2e2e2e;
+  color: rgba(255, 255, 255, 0.92);
+  -webkit-transition: background-color 0.2s cubic-bezier(0.2, 0, 0, 1);
+  transition: background-color 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+.prices-table__button:hover {
+  background-color: #272727;
+}
+.prices-table__arrow {
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 .prices-table__content-item {
   display: -webkit-box;
@@ -1702,11 +1722,10 @@ a.breadcrumbs__item:hover {
   height: auto;
 }
 .prices-table__content-title {
+  margin-bottom: 16px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 16px;
-  position: relative;
 }
 .prices-table__content-rows {
   display: -webkit-box;
@@ -1728,10 +1747,10 @@ a.breadcrumbs__item:hover {
   align-items: center;
 }
 .prices-table__content-row-title {
-  color: rgba(0, 0, 0, 0.56);
+  width: 100px;
   font-size: 16px;
   line-height: 20px;
-  width: 100px;
+  color: rgba(0, 0, 0, 0.56);
 }
 .prices-table__content-row-value {
   font-size: 16px;
@@ -1744,38 +1763,25 @@ a.breadcrumbs__item:hover {
   line-height: 26px;
 }
 .prices-table__content-small-price {
-  color: rgba(0, 0, 0, 0.56);
   font-size: 16px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.56);
 }
-.prices-table__item {
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-  font-weight: 700;
+
+.accordion__wrapper {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.3s ease;
+  transition: max-height 0.3s ease;
 }
-.prices-table__button {
-  border-radius: 8px;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 8px 16px;
-  background-color: #2e2e2e;
-  color: rgba(255, 255, 255, 0.92);
-  -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
-  transition: all 0.2s cubic-bezier(0.2, 0, 0, 1);
-  font-weight: 700;
+.accordion__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: auto;
-}
-.prices-table__button:hover {
-  background-color: #272727;
-}
-.prices-table__arrow {
-  margin-left: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .apartments-info__wrapper {

@@ -175,7 +175,6 @@
                   </div>
                 </div>
                 <h1 class="apartments__title">EMERALD ELEGANCE</h1>
-                <!-- <span class="apartments__address">Турция</span> -->
 
                 <div class="apartments__body">
                   <div class="apartments__gallery swiper apartments-gallery">
@@ -234,11 +233,20 @@
             <section class="prices-table">
               <div class="prices-table__wrapper">
                 <div class="prices-table__body">
-                  <div class="prices-table__block">
-                    <div class="prices-table__row">
-                      <div class="prices-table__item">1+1</div>
-                      <div class="prices-table__item">от 53 кв.м</div>
-                      <div class="prices-table__item">62 000 €</div>
+                  <div class="prices-table__block accordion">
+                    <div class="prices-table__row accordion__trigger">
+                      <div class="prices-table__item">
+                        <div class="prices-table__item-top">2+1</div>
+                        <div class="prices-table__item-bottom">от 53 кв.м</div>
+                      </div>
+                      <div class="prices-table__item">
+                        <div class="prices-table__item-top">от 62 000 €</div>
+                        <div class="prices-table__item-bottom">есть со скидкой до 10%</div>
+                      </div>
+                      <div class="prices-table__item">
+                        <div class="prices-table__item-top">48 планировок</div>
+                        <div class="prices-table__item-bottom">72 квартиры</div>
+                      </div>
                       <a href="/" class="prices-table__button">Забронировать</a>
                       <svg class="prices-table__arrow" width="16" height="16">
                         <path
@@ -247,62 +255,73 @@
                         ></path>
                       </svg>
                     </div>
-                    <div class="prices-table__content">
-                      <div class="prices-table__content-item">
-                        <div class="prices-table__content-img-wrapper">
-                          <img src="images/block11.webp" alt="" class="prices-table__content-img" />
-                        </div>
-                        <div class="prices-table__content-info">
-                          <div class="prices-table__content-title">Блок А</div>
-                          <div class="prices-table__content-rows">
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Кухня:</div>
-                              <div class="prices-table__content-row-value">10,3 м²</div>
+                    <div class="prices-table__content accordion__wrapper">
+                      <div class="accordion__content">
+                        <div class="prices-table__content-item">
+                          <div class="prices-table__content-img-wrapper">
+                            <img src="images/block11.webp" alt="" class="prices-table__content-img" />
+                          </div>
+                          <div class="prices-table__content-info">
+                            <div class="prices-table__content-title">Блок А</div>
+                            <div class="prices-table__content-rows">
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Кухня:</div>
+                                <div class="prices-table__content-row-value">10,3 м²</div>
+                              </div>
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Этажи:</div>
+                                <div class="prices-table__content-row-value">2, 4</div>
+                              </div>
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Срок сдачи:</div>
+                                <div class="prices-table__content-row-value">4 квартал 2026</div>
+                              </div>
+                              <div class="prices-table__content-price">62 000 €</div>
+                              <div class="prices-table__content-small-price">от 1 170 € / кв.м</div>
                             </div>
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Этажи:</div>
-                              <div class="prices-table__content-row-value">2, 4</div>
-                            </div>
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Срок сдачи:</div>
-                              <div class="prices-table__content-row-value">4 квартал 2026</div>
-                            </div>
-                            <div class="prices-table__content-price">62 000 €</div>
-                            <div class="prices-table__content-small-price">от 1 170 € / кв.м</div>
                           </div>
                         </div>
-                      </div>
-                      <div class="prices-table__content-item">
-                        <div class="prices-table__content-img-wrapper">
-                          <img src="images/block12.webp" alt="" class="prices-table__content-img" />
-                        </div>
-                        <div class="prices-table__content-info">
-                          <div class="prices-table__content-title">Блок А</div>
-                          <div class="prices-table__content-rows">
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Кухня:</div>
-                              <div class="prices-table__content-row-value">10,3 м²</div>
+                        <div class="prices-table__content-item">
+                          <div class="prices-table__content-img-wrapper">
+                            <img src="images/block12.webp" alt="" class="prices-table__content-img" />
+                          </div>
+                          <div class="prices-table__content-info">
+                            <div class="prices-table__content-title">Блок А</div>
+                            <div class="prices-table__content-rows">
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Кухня:</div>
+                                <div class="prices-table__content-row-value">10,3 м²</div>
+                              </div>
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Этажи:</div>
+                                <div class="prices-table__content-row-value">2, 4</div>
+                              </div>
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Срок сдачи:</div>
+                                <div class="prices-table__content-row-value">4 квартал 2026</div>
+                              </div>
+                              <div class="prices-table__content-price">69 000 €</div>
+                              <div class="prices-table__content-small-price">от 1 190 € / кв.м</div>
                             </div>
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Этажи:</div>
-                              <div class="prices-table__content-row-value">2, 4</div>
-                            </div>
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Срок сдачи:</div>
-                              <div class="prices-table__content-row-value">4 квартал 2026</div>
-                            </div>
-                            <div class="prices-table__content-price">69 000 €</div>
-                            <div class="prices-table__content-small-price">от 1 190 € / кв.м</div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="prices-table__block">
-                    <div class="prices-table__row">
-                      <div class="prices-table__item">2+1</div>
-                      <div class="prices-table__item">от 53 кв.м</div>
-                      <div class="prices-table__item">62 000 €</div>
+                  <div class="prices-table__block accordion">
+                    <div class="prices-table__row accordion__trigger">
+                      <div class="prices-table__item">
+                        <div class="prices-table__item-top">2+1</div>
+                        <div class="prices-table__item-bottom">от 85.19 кв.м</div>
+                      </div>
+                      <div class="prices-table__item">
+                        <div class="prices-table__item-top">от 62 000 €</div>
+                        <div class="prices-table__item-bottom"></div>
+                      </div>
+                      <div class="prices-table__item">
+                        <div class="prices-table__item-top">48 планировок</div>
+                        <div class="prices-table__item-bottom">10 квартир</div>
+                      </div>
                       <a href="/" class="prices-table__button">Забронировать</a>
                       <svg class="prices-table__arrow" width="16" height="16">
                         <path
@@ -311,28 +330,30 @@
                         ></path>
                       </svg>
                     </div>
-                    <div class="prices-table__content">
-                      <div class="prices-table__content-item">
-                        <div class="prices-table__content-img-wrapper">
-                          <img src="images/block11.webp" alt="" class="prices-table__content-img" />
-                        </div>
-                        <div class="prices-table__content-info">
-                          <div class="prices-table__content-title">Блок А</div>
-                          <div class="prices-table__content-rows">
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Кухня:</div>
-                              <div class="prices-table__content-row-value">10,3 м²</div>
+                    <div class="prices-table__content accordion__wrapper">
+                      <div class="accordion__content">
+                        <div class="prices-table__content-item">
+                          <div class="prices-table__content-img-wrapper">
+                            <img src="images/block11.webp" alt="" class="prices-table__content-img" />
+                          </div>
+                          <div class="prices-table__content-info">
+                            <div class="prices-table__content-title">Блок А</div>
+                            <div class="prices-table__content-rows">
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Кухня:</div>
+                                <div class="prices-table__content-row-value">10,3 м²</div>
+                              </div>
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Этажи:</div>
+                                <div class="prices-table__content-row-value">2, 4</div>
+                              </div>
+                              <div class="prices-table__content-row">
+                                <div class="prices-table__content-row-title">Срок сдачи:</div>
+                                <div class="prices-table__content-row-value">4 квартал 2026</div>
+                              </div>
+                              <div class="prices-table__content-price">81 000 €</div>
+                              <div class="prices-table__content-small-price">от 880 € / кв.м</div>
                             </div>
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Этажи:</div>
-                              <div class="prices-table__content-row-value">2, 4</div>
-                            </div>
-                            <div class="prices-table__content-row">
-                              <div class="prices-table__content-row-title">Срок сдачи:</div>
-                              <div class="prices-table__content-row-value">4 квартал 2026</div>
-                            </div>
-                            <div class="prices-table__content-price">81 000 €</div>
-                            <div class="prices-table__content-small-price">от 880 € / кв.м</div>
                           </div>
                         </div>
                       </div>
@@ -542,6 +563,9 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <img src="images/house1.webp" class="card__img" />
+                          <ul class="card__tags">
+                            <li class="card__tag">Новостройка</li>
+                          </ul>
                         </div>
                         <div class="swiper-slide">
                           <img src="images/details12.webp" class="card__img" />
@@ -556,9 +580,6 @@
                       <div class="swiper-pagination"></div>
                       <div class="swiper-pagination-bottom"></div>
                     </div>
-                    <ul class="card__tags">
-                      <li class="card__tag">Новостройка</li>
-                    </ul>
                   </div>
 
                   <h3 class="card__title">EMERALD ELEGANCE</h3>
@@ -599,6 +620,9 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <img src="images/house2.webp" class="card__img" />
+                          <ul class="card__tags">
+                            <li class="card__tag">Новостройка</li>
+                          </ul>
                         </div>
                         <div class="swiper-slide">
                           <img src="images/details22.webp" class="card__img" />
@@ -613,9 +637,6 @@
                       <div class="swiper-pagination"></div>
                       <div class="swiper-pagination-bottom"></div>
                     </div>
-                    <ul class="card__tags">
-                      <li class="card__tag">Новостройка</li>
-                    </ul>
                   </div>
                   <h3 class="card__title">Aqua Marin</h3>
                   <div class="card__prices-table">
@@ -648,6 +669,9 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
                           <img src="images/house3.webp" class="card__img" />
+                          <ul class="card__tags">
+                            <li class="card__tag">Новостройка</li>
+                          </ul>
                         </div>
                         <div class="swiper-slide">
                           <img src="images/details32.webp" class="card__img" />
