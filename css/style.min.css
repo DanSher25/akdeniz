@@ -743,6 +743,26 @@ h1 {
   white-space: nowrap;
 }
 
+.filter {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+.filter.is-stuck {
+  border-bottom: 1px solid #ebebeb;
+}
+.filter__wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 1324px;
+  width: 100%;
+  padding: 12px 32px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .filter__form {
   height: 56px;
   display: -webkit-box;
@@ -752,7 +772,8 @@ h1 {
   -ms-flex-align: center;
   align-items: center;
   gap: 8px;
-  margin-top: 12px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .filter__map {
   height: 100%;
