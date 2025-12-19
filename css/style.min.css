@@ -2080,6 +2080,10 @@ a.breadcrumbs__item:hover {
   color: #fff;
   font-size: 20px;
 }
+.footer__abbreviation {
+  font-size: 12px;
+  margin-top: 12px;
+}
 
 .installment-plan__wrapper {
   background-color: #f3f1f1;
